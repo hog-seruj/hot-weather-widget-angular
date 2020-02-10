@@ -1,0 +1,65 @@
+{
+  "village1": {
+    "img": "assets/images/1.jpg",
+    "info": {
+      "address": "Resort Address",
+      "description": "Sed perspiciatis",
+      "descriptionSub": "Et harum quidem",
+      "phone": "+1285 968 685"
+    },
+    "weather": {
+      "title": "Et harum quidem",
+      "icon": "cloud",
+      "water": "20",
+      "temperature": "14"
+    },
+    "social_info": {
+      "title": "string",
+      "img": "assets/images/b1.jpg",
+      "followers": "2850",
+      "following": "675"
+    }
+  },
+  "village2": {
+    "img": "assets/images/1.jpg",
+    "info": {
+      "address": "Resort Address 2",
+      "description": "Sed perspiciatis 2",
+      "descriptionSub": "Et harum quidem 2",
+      "phone": "+1285 968 222"
+    },
+    "weather": {
+      "title": "Et harum quidem 2",
+      "icon": "snow",
+      "water": "5",
+      "temperature": "-10"
+    },
+    "social_info": {
+      "title": "string",
+      "img": "assets/images/b1.jpg",
+      "followers": "8098",
+      "following": "34"
+    }
+  },
+  "village3": {
+    "img": "assets/images/1.jpg",
+    "info": {
+      "address": "Resort Address 3",
+      "description": "Sed perspiciatis 3",
+      "descriptionSub": "Et harum quidem 3",
+      "phone": "+1285 968 333"
+    },
+    "weather": {
+      "title": "Et harum quidem 2",
+      "icon": "sun",
+      "water": "23",
+      "temperature": "31"
+    },
+    "social_info": {
+      "title": "string",
+      "img": "assets/images/b1.jpg",
+      "followers": "9873",
+      "following": "67"
+    }
+  }
+}
