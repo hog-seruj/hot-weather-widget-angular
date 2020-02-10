@@ -16,6 +16,13 @@ export class AppComponent implements OnInit {
   protected weather = this.villages[this.villageName].weather;
 
   ngOnInit() {
-    // console.log(selectedVillage);
+  }
+
+  getVillageName(name) {
+    this.villageName = name;
+    this.mainImage = this.villages[name].img;
+    this.info = this.villages[name].info;
+    this.socialInfo = this.villages[name].social_info;
+    this.weather = this.villages[name].weather;
   }
 }

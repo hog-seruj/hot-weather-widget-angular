@@ -14,8 +14,4 @@ export class VillageComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  getVillageName() {
-    this.selectedVillageEv.emit();
-  }
 }

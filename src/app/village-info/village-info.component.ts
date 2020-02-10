@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-village-info',
@@ -6,13 +6,15 @@ import {Component, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./village-info.component.css']
 })
 export class VillageInfoComponent implements OnInit {
-  public selectedVillage;
   @Input() private villages;
-  @Input() public villageName;
+  @Output() public selectedVillage: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
-    this.villageName = this.selectedVillage;
+  }
+
+  selectVillage (name) {
+    this.selectedVillage.emit(name);
   }
 }

@@ -3,7 +3,7 @@
   <div class="element-left">
     <app-backround-image [mainImage]="mainImage"></app-backround-image>
     <div class="element-left-bottom">
-      <app-village-info [villages]="villages" [villageName]="villageName"></app-village-info>
+      <app-village-info [villages]="villages" (selectedVillage)="getVillageName($event)"></app-village-info>
     </div>
   </div>
   <div class="element-right">
