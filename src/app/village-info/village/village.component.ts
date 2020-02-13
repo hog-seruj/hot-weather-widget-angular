@@ -8,8 +8,6 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class VillageComponent implements OnInit {
   @Input() village;
 
-  @Output() selectedVillageEv: EventEmitter<any> = new EventEmitter();
-
   constructor() { }
 
   ngOnInit() {

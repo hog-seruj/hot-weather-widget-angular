@@ -1,4 +1,4 @@
-import {Component, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as  villagesData from './weather-app.json';
 
 @Component({
@@ -9,20 +9,13 @@ import * as  villagesData from './weather-app.json';
 export class AppComponent implements OnInit {
   title = 'Et harum quidem';
   private villages: any = (villagesData as any).default;
-  private villageName = Object.keys(this.villages)[0];
-  protected mainImage = this.villages[this.villageName].img;
-  protected info = this.villages[this.villageName].info;
-  protected socialInfo = this.villages[this.villageName].social_info;
-  protected weather = this.villages[this.villageName].weather;
+  protected currentVillage;
 
   ngOnInit() {
+    this.currentVillage = this.villages[0]
   }
 
   getVillageName(name) {
-    this.villageName = name;
-    this.mainImage = this.villages[name].img;
-    this.info = this.villages[name].info;
-    this.socialInfo = this.villages[name].social_info;
-    this.weather = this.villages[name].weather;
+    this.currentVillage = this.villages[name];
   }
 }

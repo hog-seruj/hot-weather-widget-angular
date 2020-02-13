@@ -1,14 +1,14 @@
 <h1>{{ title }}</h1>
 <div class="element">
   <div class="element-left">
-    <app-backround-image [mainImage]="mainImage"></app-backround-image>
+    <app-backround-image [mainImage]="this.currentVillage.img"></app-backround-image>
     <div class="element-left-bottom">
       <app-village-info [villages]="villages" (selectedVillage)="getVillageName($event)"></app-village-info>
     </div>
   </div>
   <div class="element-right">
-    <app-temperature [weather]="weather"></app-temperature>
-    <app-teddy-bear [socialInfo]="socialInfo"></app-teddy-bear>
+    <app-temperature [weather]="this.currentVillage.weather"></app-temperature>
+    <app-teddy-bear [socialInfo]="this.currentVillage.social_info"></app-teddy-bear>
   </div>
   <div class="clear"> </div>
 </div>
